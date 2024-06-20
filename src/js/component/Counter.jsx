@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
+
 const Counter = () => {
     const [segundoActual, setsegundoActual] = useState(0);
 
@@ -22,11 +23,12 @@ const Counter = () => {
     }, [segundoActual]);
 
   return (
+    
     <div>
         <div className="container">
 			<div className="row bg-dark text-light h1 p-3 text-center">
 				<div className="col" id="logo">
-                    <i>Clock</i>
+                <i class="fa-solid fa-clock"></i>
                 </div>
 				<div className="col" id="pos6">0</div>
 				<div className="col" id="pos5">0</div>
@@ -37,6 +39,7 @@ const Counter = () => {
 			</div>
 		</div>
     </div>
+    
   )
 }
 
